@@ -17,6 +17,7 @@ def invalid_votes_hist(filename, election_name):
     msg = 'percent of polling stations recorded no votes'
     print rows_without_votes / len(rows) * 100, msg
 
+    plt.clf()
     plt.hist(invalid_vote_percentages, bins=100)
     plt.xlabel('[%] Votes that are invalid')
     plt.ylabel('# polling stations')
@@ -33,4 +34,10 @@ if __name__ == '__main__':
     print '        across all polling stations.'
     plotname = invalid_votes_hist('data/20/by_polling_stations.csv',
                                   'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+    plotname = invalid_votes_hist('data/19/by_polling_stations.csv',
+                                  'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+    plotname = invalid_votes_hist('data/18/by_polling_stations.csv',
+                                  'Israel 18th Knesset Election')
     print '*** Generated', plotname

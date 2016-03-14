@@ -25,6 +25,7 @@ def turnout_hist(filename, election_name):
     msg = 'percent of polling stations did not have #registered voters'
     print missing_percent, msg
 
+    plt.clf()
     plt.hist(turnouts, bins=50)
     plt.xlabel('[%] Voter turnout')
     plt.ylabel('# polling stations')
@@ -44,4 +45,10 @@ if __name__ == '__main__':
     print '***     references/Russia2008_Lukinova_Myagokov_Ordeshook-1.doc'
     plotname = turnout_hist('data/20/by_polling_stations.csv',
                             'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+    plotname = turnout_hist('data/19/by_polling_stations.csv',
+                            'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+    plotname = turnout_hist('data/18/by_polling_stations.csv',
+                            'Israel 18th Knesset Election')
     print '*** Generated', plotname

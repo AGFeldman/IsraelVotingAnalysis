@@ -29,6 +29,7 @@ def analyze(filename, party_num, party_name, election_name):
     msg = 'percent of polling stations did not have #registered voters'
     print missing_percent, msg
 
+    plt.clf()
     plt.hist2d(turnouts, percentages_for_party_num, bins=75)
     plt.colorbar(label='# polling stations')
     plt.xlabel('[%] Voter turnout')
@@ -45,4 +46,10 @@ if __name__ == '__main__':
     print '*** Generating plots that are similar to references/1201.3087.pdf :'
     plotname = analyze('data/20/by_polling_stations.csv', 13, 'Likud',
                        'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/19/by_polling_stations.csv', 13, 'Likud',
+                       'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/18/by_polling_stations.csv', 15, 'Likud',
+                       'Israel 18th Knesset Election')
     print '*** Generated', plotname
