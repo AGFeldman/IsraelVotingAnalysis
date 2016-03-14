@@ -1,1 +1,1 @@
-Run `generate_plots.sh`
+Run `generate.sh`
