@@ -31,7 +31,7 @@ def turnout_hist(filename, election_name):
     plt.title(election_name)
     plot_filename = 'plots/' + election_name + ' voter turnout.pdf'
     plt.savefig(plot_filename)
-    plt.show()
+    # plt.show()
     return plot_filename
 
 
