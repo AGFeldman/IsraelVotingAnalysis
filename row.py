@@ -13,6 +13,7 @@ class Row(object):
         if self.registered_voters != 0 and self.votes > self.registered_voters:
             print 'WARNING:', self.votes, 'votes but only', self.registered_voters, 'registered voters'
         self.data = map(int, raw_row[7:])
+        assert sum(self.data) == self.valid_votes
 
     def __getitem__(self, key):
         return self.data[key]
