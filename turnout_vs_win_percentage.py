@@ -47,9 +47,65 @@ if __name__ == '__main__':
     plotname = analyze('data/20/by_polling_stations.csv', 13, 'Likud',
                        'Israel 20th Knesset Election')
     print '*** Generated', plotname
+    plotname = analyze('data/20/by_polling_stations.csv', 0, 'Zionist Union (Labor)',
+                       'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/20/by_polling_stations.csv', 2, 'Joint List (United Arab List)',
+                       'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/20/by_polling_stations.csv', 19, 'Yesh Atid',
+                       'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/20/by_polling_stations.csv', 11, 'Kulanu',
+                       'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/20/by_polling_stations.csv', 6, 'The Jewish Home',
+                       'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/20/by_polling_stations.csv', 25, 'Shas',
+                       'Israel 20th Knesset Election')
+    print '*** Generated', plotname
+
     plotname = analyze('data/19/by_polling_stations.csv', 13, 'Likud',
                        'Israel 19th Knesset Election')
     print '*** Generated', plotname
+    plotname = analyze('data/19/by_polling_stations.csv', 21, 'Yesh Atid',
+                       'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/19/by_polling_stations.csv', 0, 'Labor',
+                       'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/19/by_polling_stations.csv', 10, 'The Jewish Home',
+                       'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/19/by_polling_stations.csv', 33, 'Shas',
+                       'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/19/by_polling_stations.csv', 1, 'United Torah Judaism',
+                       'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/19/by_polling_stations.csv', 19, 'United Arab List',
+                       'Israel 19th Knesset Election')
+    print '*** Generated', plotname
+
+    plotname = analyze('data/18/by_polling_stations.csv', 13, 'Kadima',
+                       'Israel 18th Knesset Election')
+    print '*** Generated', plotname
     plotname = analyze('data/18/by_polling_stations.csv', 15, 'Likud',
+                       'Israel 18th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/18/by_polling_stations.csv', 14, 'Yisrael Beiteinu',
+                       'Israel 18th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/18/by_polling_stations.csv', 0, 'Labor',
+                       'Israel 18th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/18/by_polling_stations.csv', 33, 'Shas',
+                       'Israel 18th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/18/by_polling_stations.csv', 3, 'United Torah Judaism',
+                       'Israel 18th Knesset Election')
+    print '*** Generated', plotname
+    plotname = analyze('data/18/by_polling_stations.csv', 21, 'United Arab List',
                        'Israel 18th Knesset Election')
     print '*** Generated', plotname
